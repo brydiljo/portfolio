@@ -3,31 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Web Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js"></script>
+    <link rel="icon" type="image/jpg" href="./imgs/myfaveicon.jpg">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <a href="#" class="logo-holder">
+             <div class="logo">L</div>
+             <div class="logo-text">Portfolio Website</div>
+        </a>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+           <ul id="menu">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#experience">Experiences</a>
+            </li>
+            <li>
+                <a href="#about">Trips</a>
+            </li>
+            <li>
+                <a href="mailto:bryandilbert91@gmail.com" class="button">Contact Me</a>
+            </li>
+           </ul> 
+           <a href="#" class="mobile-toggle" onClick= "toggleMobileMenu();">
+            
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+              </svg>
+              
+           </a>
         </nav>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Short bio goes here.</p>
-    </section>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <p>Descriptions and links to your projects go here.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: your-email@example.com</p>
-    </section>
+    <main>
+        <section class="hero container">
+            <div class="hero-blue">
+                <h1><snall>Hi I'm</snall>Bryan Dilbert Johnson</h1>
+                <p>
+                    Design and Develop...
+                    <span>
+                        I'm interested in AI Topics these days...
+                    </span>
+                </p>
+                <div class="call-to-action">
+                    <a href="./CV - Bryan Dilbert 2025.pdf" class="button black">View Resume</a>
+                    <a href="mailto:bryandilbert91@gmail.com" class="button white">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/bwdjohnson" target="_blank">
+                        <img src="./imgs/fb4.webp" alt="Facebook" width="48"/>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/bryan-dilbert" target="_blank">
+                        <img src="./imgs/in2.png" alt="Linkedin" width="48" height="45"/>
+                    </a>
+                </div>
+
+            </div>
+            <div class="hero-yellow">
+                <img src="./imgs/myfaveicon2.png" alt="Bryan Dilbert" width="100%"/>
+            </div>
+        </section>
+        <section class="logos container">
+            <div class="marquee">
+                <div class="track">
+                     <img src="./imgs/azure.png" alt="Azure" width="128"/>
+                     <img src="./imgs/css.png" alt="CSS" width="128"/>
+                     <img src="./imgs/javascript.png" alt="Javascript" width="128"/>
+                     <img src="./imgs/html.png" alt="HTML" width="128"/>
+                     <img src="./imgs/sass.png" alt="SASS" width="128"/>
+                     <img src="./imgs/react.png" alt="REACT" width="128"/>
+                     <img src="./imgs/nextjs.png" alt="Next JS" width="128"/>
+                     <img src="./imgs/vscode.png" alt="VS Code" width="128"/>
+                     <img src="./imgs/python.png" alt="Python" width="128"/>
+                     <img src="./imgs/azure.png" alt="Azure" width="128"/>
+                     <img src="./imgs/css.png" alt="CSS" width="128"/>
+                     <img src="./imgs/javascript.png" alt="Javascript" width="128"/>
+                     <img src="./imgs/html.png" alt="HTML" width="128"/>
+                     <img src="./imgs/sass.png" alt="SASS" width="128"/>
+                     <img src="./imgs/react.png" alt="REACT" width="128"/>
+                     <img src="./imgs/nextjs.png" alt="Next JS" width="128"/>
+                     <img src="./imgs/vscode.png" alt="VS Code" width="128"/>
+                     <img src="./imgs/python.png" alt="Python" width="128"/>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills container">
+            <h2>
+                <small>About Me</small>
+                Skills
+            </h2>
+            <div class="holder-blue">
+                 <div class="left-column">
+                     <h3>Frontend</h3>
+                     <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                     </ul>
+                     <h3>Backend</h3>
+                     <ul>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Python</li>
+                     </ul>
+                </div>
+                <div class="right-column">
+                    <h3>A bit about me</h3>
+                    
+                    <p>Hi I'm Bryan Dilbert, a Web developer and designer
+                        specialized in HTML, CSS and Javascript. I'm interested
+                        in new generation languages with AI capacities
+                        and learning how to add AI into my projects
+                    </p>
+                    <p>
+                        I am currently working as a freelancer 
+                        working with small business to increase their 
+                        online presence in the market, with new websites,
+                        AI chatbots, or other interesting tools.
+                    </p>
+               </div>
+            </div>
+           
+        </section>
+        <section id="experience" class= "work-experience container">
+            <h2>
+                <small>Recent</small>
+                Work Experience
+            </h2>
+            <div class="jobs">
+                <article>
+                    <figure>
+                        <div>
+                            <img src="./imgs/work-1.jpg" alt="Workplace -1" width="100%"/>
+                            <figcaption>Teleperformance HON</figcaption>
+                        </div>
+                    </figure>
+                    <h3>Assistant Training manager</h3>
+                    <div>2021-2024</div>
+                    <p>Delivering training content as well as creating training materials
+                        and preparing trainers for different types of trainings...
+                    </p>
+                </article>
+                <article>
+                    <figure>
+                        <div>
+                            <img src="./imgs/work-2.jpg" alt="Workplace -2" width="100%"/>
+                            <figcaption>Teleperformance CR</figcaption>
+                        </div>
+                    </figure>
+                    <h3>Senior Captioning Rep</h3>
+                    <div>2017-2020</div>
+                    <p>Providing insights for Quality assurance and assisting with uptraining 
+                        for underperforming captioners...
+                    </p>
+                </article>
+                <article>
+                    <figure>
+                        <div>
+                            <img src="./imgs/work-3.jpg" alt="Workplace -3" width="100%"/>
+                            <figcaption>Bay Island Tech Institute</figcaption>
+                        </div>
+                    </figure>
+                    <h3>IT Infrastructure Manager</h3>
+                    <div>2012-2015</div>
+                    <p>Providing IT support for the different departments of a high school, 
+                        managing the networking and computing infrastructure, including implementations
+                        migrations, basic and advanced maintenance...
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section id="about" class="bento container">
+            <h2>
+                <small>
+                    Various
+                </small>
+                Fun Travels
+            </h2>
+            <div class="bento-grid">
+                
+                <div class="bento-item">
+                    <figure>
+                        <img src="./imgs/travel-6.jpg" alt="BGCCI" width="100%"/>
+                        <figcaption id="figcap">Pulhapansac, Honduras</figcaption>
+                    </figure>
+                </div>
+                <div class="bento-item">
+                    <img src="./imgs/travel-0.jpg" alt="Churchview" width="100%"/>
+                    <figcaption id="figcap">Comayagua, Honduras</figcaption>
+                </div>
+                <div class="bento-item">
+                    <img src="./imgs/travel-3.jpg" alt="Harley" width="100%"/>
+                    <figcaption id="figcap">Nassau, Bahamas</figcaption>
+                </div>
+                <div class="bento-item">
+                    <img src="./imgs/travel-2.jpg" alt="Bunbury" width="100%"/>
+                    <figcaption id="figcap">Doha, United Emirates</figcaption>
+                </div>
+                <div class="bento-item">
+                    <img src="./imgs/travel-7.jpg" alt="Running" width="100%"/>
+                    <figcaption id="figcap">Le Havre, France</figcaption>
+                </div>
+                <div class="bento-item">
+                    <img src="./imgs/travel-9.jpg" alt="School" width="100%"/>
+                    <figcaption id="figcap">Roatan, Bay Islands of Honduras</figcaption>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
 </body>
+
+<footer>
+    <div>
+            <p>
+                Designed by brydiljo, March 2025 ©
+            </p>
+        </div>
+</footer>
 </html>
+
